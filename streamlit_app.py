@@ -15,8 +15,8 @@ from selenium.webdriver.chrome.service import Service
 from os.path import exists
 
 st.set_page_config(page_title="get selenium working", page_icon=':wave:')
-st.title('get sleen wokring')
-st.warning('An app for taking screenshot of a Streamlit app.')
+st.title('get Selenium  wokring')
+st.warning('Getting selenium to work on Streamlit community cloud.')
 
 #@st.cache_resource
 def get_driver():
@@ -34,14 +34,13 @@ def get_driver():
 driver = get_driver()
 runner = str(47595)
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
-st.write(ParkrunURL)
-driver.implicitly_wait(20)  # Wait for up to 10 seconds
+driver.implicitly_wait(10)  # Wait for up to 10 seconds
 try:
     table = driver.find_element(By.XPATH, "(//table)[3]")
-    #vegetable = driver.find_element(By.CLASS_NAME, "sortable")
+    #table = driver.find_element(By.CLASS_NAME, "sortable")
     #table_element = driver.find_element_by_id("results")
-    #fruits = driver.find_element(By.ID, "results")
-    #fruit = fruits.find_element(By.CLASS_NAME,"sortable")
+    #tables = driver.find_element(By.ID, "results")
+    #table = fruits.find_element(By.CLASS_NAME,"sortable")
   
     st.write('we got it')
 except:
