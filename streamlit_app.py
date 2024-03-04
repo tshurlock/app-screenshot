@@ -40,7 +40,7 @@ st.write(driver.current_url)
 driver.implicitly_wait(10)  # Wait for up to 10 seconds
 try:
     #table = driver.find_element(By.XPATH, "(//table)[3]")
-    #table= driver.find_element(By.XPATH, "/html/body/main/div/div/div/div[3]/table")
+    table= driver.find_element(By.XPATH, "/html/body/main/div/div/div/div[3]/table")
     #table = driver.find_element(By.XPATH, '//*[@id="results"]')
     #table = driver.find_element(By.CLASS_NAME, "sortable")
     #table_element = driver.find_element_by_id("results")
