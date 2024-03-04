@@ -34,9 +34,9 @@ def get_driver():
 driver = get_driver()
 runner = str(47595)
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
-driver.implicitly_wait(10)  # Wait for up to 10 seconds
+driver.implicitly_wait(20)  # Wait for up to 10 seconds
 try:
-    table = driver.find_element(By.XPATH, "(//table)[1]")
+    table = driver.find_element(By.XPATH, "(//table)[3]")
     #vegetable = driver.find_element(By.CLASS_NAME, "sortable")
     #table_element = driver.find_element_by_id("results")
     #fruits = driver.find_element(By.ID, "results")
