@@ -34,7 +34,7 @@ def get_driver():
 driver = get_driver()
 runner = str(47595)
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
-driver.get("https://www.parkrun.org.uk.parkrunner/47595/all/")
+driver.get("https://www.parkrun.org.uk")
 driver.implicitly_wait(10)  # Wait for up to 10 seconds
 st.write(driver.current_url)
 driver.implicitly_wait(10)  # Wait for up to 10 seconds
