@@ -14,8 +14,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from os.path import exists
 
-st.set_page_config(page_title="🎈 App Screenshot")
-st.title('🎈 App Screenshot')
+st.set_page_config(page_title="get selenium working", page_icon=':wave:')
+st.title('get sleen wokring')
 st.warning('An app for taking screenshot of a Streamlit app.')
 
 #@st.cache_resource
