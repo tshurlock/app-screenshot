@@ -34,7 +34,7 @@ def get_driver():
 driver = get_driver()
 runner = str(47595)
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
-driver.get(ParkrunURL)
+driver.get("http:/www.python.org")
 #driver.implicitly_wait(10)  # Wait for up to 10 seconds
 try:
     table = driver.find_element(By.XPATH, "(//table)[3]")
