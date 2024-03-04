@@ -35,6 +35,7 @@ driver = get_driver()
 runner = str(47595)
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
 driver.get("https://www.bbc.co.uk/news/uk-68468019")
+st.write(driver.current_url)
 driver.implicitly_wait(10)  # Wait for up to 10 seconds
 try:
     table = driver.find_element(By.XPATH, "(//table)[3]")
