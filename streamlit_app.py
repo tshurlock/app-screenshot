@@ -34,8 +34,11 @@ def get_driver():
 driver = get_driver()
 runner = str(47595)
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
-table = driver.find_element(By.XPATH, "(//table)[3]")
-st.write('this table was collected')
+try:
+    table = driver.find_element(By.XPATH, "(//table)[3]")
+except:
+    st.write('this table was not found')  
+
    
 
 
