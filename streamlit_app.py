@@ -36,8 +36,11 @@ runner = str(47595)
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
 try:
     #table = driver.find_element(By.XPATH, "(//table)[0]")
-    vegetable = driver.find_element(By.CLASS_NAME, "sortable")
+    #vegetable = driver.find_element(By.CLASS_NAME, "sortable")
     #table_element = driver.find_element_by_id("results")
+    fruits = driver.find_element(By.ID, "results")
+    fruit = fruits.find_element(By.CLASS_NAME,"sortable")
+  
     st.write('we got it')
 except:
     st.write('this table was not found')  
