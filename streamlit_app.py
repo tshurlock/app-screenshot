@@ -34,20 +34,13 @@ def get_driver():
 driver = get_driver()
 runner = str(47595)
 ParkrunURL = "https://www.parkrun.org.uk//parkrunner//" + runner + "//all//"
-#try:
+try:
     #table = driver.find_element(By.XPATH, "(//table)[0]")
-    #table_element = driver.find_element_by_id("results")
-    #st.write('we got it')
+    table_element = driver.find_element_by_id("results")
+    st.write('we got it')
 #except:
-    #st.write('this table was not found')  
+    st.write('this table was not found')  
 
-while 1:
-    try:
-        driver.find_element_by_class_name("sortable")
-        break
-    except:
-        continue
 
-   
 
 
